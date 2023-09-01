@@ -1,0 +1,46 @@
+#cinematicFrame{
+    width: auto;
+    height: 40.8125em;
+    position: fixed;
+    top:8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-frame{
+    object-fit: cover;
+}
+
+#video-frame::-webkit-media-controls {
+    display: none;
+  }
+  
+#video-frame::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
+
+#video-overlay-text-heading{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    z-index: 1;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+}
+#video-overlay-text-heading-content{
+    position: absolute;
+    top: 55%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+}

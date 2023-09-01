@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Set viewport for responsive design -->
+    <meta name="viewport" content="width=auto, initial-scale=1.0" />
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/homePageCSS/home.css" />
+    <link rel="stylesheet type=text/css" href="../css/homePageCSS/cinematicFrame.css" />
+    <link rel="stylesheet" href="../css/homePageCSS/homeBackground.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Titillium+Web&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Set the title of the document -->
+    <title>portfolio</title>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div id="mainHomePage">
+      <!-- Background animation -->
+      <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <!-- Cinematic frame -->
+      <div id="cinematicFrame">
+        <!-- Video frame -->
+        <video id="video-frame" width="1536" height="541" autoplay muted loop>
+          <source
+            src="../assets/videos/backgroundVideo.webm"
+            type="video/mp4"
+          />
+        </video>
+        <!-- Overlay text -->
+        <h1 id="video-overlay-text-heading">tanixon</h1>
+        <pre id="video-overlay-text-heading-content">
+          dreamer | developer | designer | breathless
+        </pre>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/stars.js"></script>
+    <script>
+      // Repeat video playback when it ends
+      var video = document.getElementById("video-frame");
+      video.addEventListener("ended", function () {
+        video.play();
+      });
+    </script>
+
+    <!-- Background music -->
+    <audio src="../assets/music/backgroundMusic.ogg" autoplay loop></audio>
+  </body>
+</html>

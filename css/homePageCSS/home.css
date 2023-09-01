@@ -1,0 +1,14 @@
+hmtl,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#mainHomePage {
+  width: auto;
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
